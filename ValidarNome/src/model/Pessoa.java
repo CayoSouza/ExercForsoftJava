@@ -8,6 +8,7 @@ public class Pessoa {
 	}
 
 	public void setNome(String nome) {
+		//testa se o nome tem pelo menos nome e sobrenome
 		if (nome.split(" ").length>=2)
 			this.nome = nome;
 	}

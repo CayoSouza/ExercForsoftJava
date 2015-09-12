@@ -20,19 +20,25 @@ public class Principal {
 		Matcher matcher;
 		
 		System.out.print("Digite um nome: ");
-		String nome = entrada.nextLine();	//captura a entrada 
+		//captura a entrada
+		String nome = entrada.nextLine(); 
 		
-		pattern = Pattern.compile(regex);	//representacao compilada da expressao regular
-		matcher = pattern.matcher(nome);	//chama o "comparador" que vai buscar na variável nome a expressao regular
+		//representacao compilada da expressao regular
+		pattern = Pattern.compile(regex);
+		//chama o "comparador" que vai buscar na variável nome a expressao regular
+		matcher = pattern.matcher(nome);
 		
+		//instancia e associa pessoa
 		p = new Pessoa();
 		
-		if(matcher.find())		//se achar, chama o setNome de Pessoa
+		//se bater com o regex, retorna true, entao chama o setNome de Pessoa
+		if(matcher.find())
 			p.setNome(nome);
 			
 		System.out.println("O nome cadastrado em pessoa é "+ p.getNome());
 		
-		entrada.close();		//fecha o Scanner
+		//fecha o Scanner
+		entrada.close();
 	}
 
 }
