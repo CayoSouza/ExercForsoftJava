@@ -15,7 +15,8 @@ public class Principal {
 		//declaracao de variaveis
 		Pessoa p;
 		Scanner entrada = new Scanner(System.in);
-		String regex = "^[a-zA-ZáàâãéèêíóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$";	//exemplo de filtro de caracteres, expressao regular
+		//exemplo de filtro de caracteres, expressao regular
+		String regex = "^[a-zA-ZáàâãéèêíóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$";
 		Pattern pattern;
 		Matcher matcher;
 		
