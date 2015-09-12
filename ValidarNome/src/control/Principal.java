@@ -8,7 +8,7 @@ import model.Pessoa;
 
 public class Principal {
 	public static void main(String[] args) {
-		new Principal().validarNomePessoa();;
+		new Principal().validarNomePessoa();
 	}
 	
 	public void validarNomePessoa(){
